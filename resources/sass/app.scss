@@ -1,0 +1,10 @@
+@import'partials/before.footer';
+@import'partials/header';
+@import 'partials/footer';
+@import 'home';
+@import 'le-lieu';
+@import 'la-table/la-table';
+
+html{
+    scroll-behavior: smooth;
+}

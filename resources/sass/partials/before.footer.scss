@@ -1,0 +1,27 @@
+.before-footer{
+    width: 100%;
+    min-height: 75px;
+    border-top: 1px solid rgba(55, 55, 55, 0.15);
+    margin-top: 120px;
+
+    p{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    gap: 30px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    text-transform: uppercase;
+    }
+    a{
+        opacity: 0.5;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 250ms ease;
+    white-space: nowrap;
+    }
+
+}

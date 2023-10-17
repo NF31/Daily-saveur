@@ -1,0 +1,170 @@
+.lelieu {
+    margin-top: 8%;
+
+    .restaurant-info {
+        padding-top: 3%;
+        padding-bottom: 4.978%;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+        h1 {
+            font-size: 54px;
+            line-height: 63px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .restaurant-image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+
+        div {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .restaurant-location {
+        padding: 4vw 4.173vw;
+        display: flex;
+        gap: 40px;
+        max-width: 1600px;
+        margin: 0 auto;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .location-left {
+            flex: 1;
+            padding-left: 7vw;
+            padding-right: 0px;
+            padding-top: 4vw;
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 1.6;
+            }
+        }
+
+        .location-right {
+            flex: 1;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .chef-section {
+        display: flex;
+        padding: 4vw 4.173vw;
+        gap: 8.712vw;
+        position: relative;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .chef-image {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .chef-description {
+            /* Votre contenu ici */
+        }
+    }
+
+    .restaurant-rooms {
+        padding: 4vw 4.173vw;
+        position: relative;
+
+        .rooms-title {
+            h2 {
+                margin-bottom: 60px;
+            }
+        }
+
+        .rooms-description {
+            /* Votre contenu ici */
+        }
+
+        .rooms-gallery {
+            ul.room-list {
+                margin-top: 120px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.955vw;
+
+                .room-item {
+                    width: 29.283vw;
+                    max-width: 500px;
+
+                    .room-image {
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            overflow-wrap: break-word;
+        }
+    }
+
+    .editorial-slider {
+        &.row-reverse {
+            flex-direction: row-reverse;
+
+            .slider-content {
+                position: relative;
+
+                .slider-image {
+                    /* Votre contenu ici */
+                }
+            }
+        }
+
+        display: flex;
+        padding: 4vw 4.173vw;
+        gap: 8.712vw;
+        position: relative;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

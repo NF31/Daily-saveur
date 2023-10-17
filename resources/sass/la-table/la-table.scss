@@ -1,0 +1,176 @@
+.table {
+    margin-top: 8%;
+
+    .pics {
+        position: relative;
+        width: 100%;
+        height: auto; /* Pour maintenir le rapport hauteur/largeur de l'image */
+        margin-bottom: 20px; /* Espace sous les images */
+    }
+
+    .pics div {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .pics div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+        display: flex;
+        padding: 40px 41.73px;
+        gap: 87.12px;
+        position: relative;
+        align-items: center;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        margin-top: 45px;
+    }
+
+    .content .left {
+        flex-basis: 50%; /* Occupe la moitié de la largeur du conteneur parent */
+        line-height: 1.8;
+        padding-right: 0px;
+        padding-left: 70px;
+        padding-top: 40px;
+        width: 50%;
+        text-align: start;
+    }
+
+    .content .left h2 {
+        text-transform: uppercase;
+        font-size: 28px; /* Ajustez la taille de la police selon vos besoins */
+        margin-bottom: 20px; /* Espace entre les éléments */
+    }
+
+    .content .right {
+        flex-basis: 45%; /* Occupe 45% de la largeur du conteneur parent */
+        text-align: left;
+        max-width: 627px;
+        max-height: 744px;
+        width: 459px;
+        height: 544.66px;
+        overflow: hidden;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+    }
+
+    .content .right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .faq-container{
+        margin: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 4vw 11.173vw;
+    }
+    .faq {
+        width: 80%;
+        margin-top: 32px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid rgba(55, 55, 55, 0.2);
+        cursor: pointer;
+        transition: border-bottom 0.3s ease; /* Ajout d'une transition pour la bordure */
+    }
+
+    .faq.active .answer {
+        max-height: 500px;
+        animation: fade 1s ease-in-out;
+    }
+
+    .faq.active i {
+        transform: rotate(180deg);
+        transition: transform 0.5s ease-in; /* Transition pour l'icône */
+    }
+
+    .question {
+        display: flex;
+        align-items: center;
+     justify-content: space-between;
+     transition: margin 0.3s ease; /* Transition pour la marge */
+    }
+
+    .question h3 {
+        font-size: 28px;
+    }
+
+    .question span {
+        margin-left: -40%;
+    }
+    .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease; /* Correction de la propriété max-height */
+    }
+    .answer .dedans{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .answer p {
+        padding-top: 16px;
+        line-height: 1.6;
+        font-size: 20px;
+    }
+
+
+    .answer .dedans span{
+        margin-top: 2%;
+    }
+
+    .answer .dedans .petit{
+        font-size: 15px;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}
+
+.tables {
+    padding-top: 30px;
+    padding-bottom: 49.78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    margin: auto;
+    width: 60%;
+    box-sizing: border-box;
+
+    h1 {
+        font-size: 54px;
+        line-height: 63px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+/* CSS*/
